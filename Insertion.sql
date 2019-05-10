@@ -30,13 +30,16 @@ INSERT INTO tblOyuncu
 VALUES ('Luther Stark', 1)
 
 INSERT INTO tblOyuncu
-VALUES ('Darius Wyman', 2)
+VALUES ('Darius Wyman', 0)
 
 INSERT INTO tblOyuncu
-VALUES ('Gregory Howe', 3)
+VALUES ('Gregory Howe', 0)
 
 INSERT INTO tblOyuncu
-VALUES ('Ed Ortiz', 4)
+VALUES ('Ed Ortiz', 0)
+
+INSERT INTO tblOyuncu
+VALUES ('Josue OConnell', 0)
 
 INSERT INTO tblLokasyon
 VALUES ('ev', 'Edwin Ridge 796 Herman Extension Apt. 264')
@@ -49,6 +52,9 @@ VALUES ('kulüp', 'Chanelle Cliff 868 Stanton Island Apt. 009')
 
 INSERT INTO tblLokasyon
 VALUES ('okul', 'Bradtke Estates 47324 Abshire Squares Suite 441')
+
+INSERT INTO tblLokasyon
+VALUES ('yurt', 'Nolan Manors 10116 Thurman Mall Suite 647')
 
 INSERT INTO tblOyna
 VALUES ('oyna1', '2019-04-18 10:34:09', '2019-04-19 10:34:09', null, 1, 'yorum', 1, 1, 1)
@@ -98,6 +104,12 @@ VALUES ('Massachusetts', 3)
 INSERT INTO tblIl
 VALUES ('Washington', 4)
 
+INSERT INTO tblIl
+VALUES ('North Laronstad', 1)
+
+INSERT INTO tblIl
+VALUES ('Lake Onieshire', 2)
+
 INSERT INTO tblIlce
 VALUES ('Key West', 1)
 
@@ -109,6 +121,12 @@ VALUES ('Edgartown', 3)
 
 INSERT INTO tblIlce
 VALUES ('Longview', 4)
+
+INSERT INTO tblIlce
+VALUES ('Lake', 2)
+
+INSERT INTO tblIlce
+VALUES ('South', 3)
 
 INSERT INTO tblArtist
 VALUES ('Clovis Fadel', 'mail1', '1997-04-18')
@@ -218,9 +236,27 @@ VALUES ('ozellik3', 3, 2)
 INSERT INTO tblOyuncuSatinAlirRozet
 VALUES ('ozellik4', 4, 1)
 
+INSERT INTO tblOyunIcerirKategori
+VALUES (1,2)
+
+INSERT INTO tblOyunIcerirKategori
+VALUES (2,3)
+
+INSERT INTO tblOyunIcerirKategori
+VALUES (3,4)
+
+INSERT INTO tblOyunIcerirKategori
+VALUES (4,1)
+
 select * from tblYayimci
 select * from tblOyun
 select * from tblOyuncu
+select * from tblRozet
+select * from tblGruplar
+select * from tblOyna
+select * from tblIl
+select * from tblIlce
+select * from tblLokasyon
 select * from tblArtist
 select * from tblTasarimci
 select * from tblOdul
@@ -230,3 +266,4 @@ select * from tblOyuncuSatinAlirOyun
 select * from tblOyuncuArkadasOlur
 select * from tblOyuncuKatilirOyna
 select * from tblOyuncuSatinAlirRozet
+select * from tblOyunIcerirKategori
